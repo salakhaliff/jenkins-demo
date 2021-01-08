@@ -1,8 +1,6 @@
 pipeline {
     agent {
-        docker {
-            image 'alpine:3.7'
-        }
+       label 'docker'
     }   
     stages {
         stage('Build') {
